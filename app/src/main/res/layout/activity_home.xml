@@ -24,7 +24,7 @@
     android:layout_height="wrap_content"
     android:orientation="vertical"
     app:layout_constraintGuide_percent="0.5"
-  />
+    />
 
   <ImageView
     android:id="@+id/icon_tyrion"
@@ -35,8 +35,7 @@
     app:layout_constraintTop_toTopOf="@id/blueBar"
     app:layout_constraintBottom_toBottomOf="@id/blueBar"
     app:layout_constraintEnd_toStartOf="@id/guideline"
-  app:layout_constraintMarginStart="16dp"
-  />
+    />
 
   <ImageView
     android:id="@+id/icon_john"
@@ -47,14 +46,13 @@
     app:layout_constraintTop_toTopOf="@id/blueBar"
     app:layout_constraintBottom_toBottomOf="@id/blueBar"
     app:layout_constraintStart_toEndOf="@id/guideline"
-  app:layout_constraintMarginEnd="16dp"
-  />
+    />
 
   <TextView
-    android:id="@+id/header_text"
+    android:id="@+id/user_text"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
-    android:text="Olá, querido"
+    android:text="@string/ola_user"
     app:layout_constraintStart_toStartOf="parent"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintTop_toBottomOf="@id/blueBar"
@@ -64,7 +62,21 @@
     android:fontFamily="@font/alata"
     />
 
+  <TextView
+    android:id="@+id/phrase_text"
+    android:layout_width="wrap_content"
+    android:layout_height="wrap_content"
+    android:layout_marginTop="184dp"
+    android:fontFamily="@font/alata"
+    android:text="@string/pharase_text"
+    android:textColor="@color/black"
+    android:textSize="20sp"
+    app:layout_constraintEnd_toEndOf="parent"
+    app:layout_constraintStart_toStartOf="parent"
+    app:layout_constraintTop_toBottomOf="@+id/user_text" />
+
   <Button
+    android:id="@+id/botao_gerar_frase"
     android:layout_width="wrap_content"
     android:layout_height="wrap_content"
     android:text="@string/gerar_outra_frase"
@@ -77,5 +89,6 @@
     android:backgroundTint="@color/dark_blue"
     android:textSize="14sp"
     android:fontFamily="@font/alata"
+
     />
 </androidx.constraintlayout.widget.ConstraintLayout>

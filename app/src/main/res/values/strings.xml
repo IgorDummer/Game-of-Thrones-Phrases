@@ -1,7 +1,9 @@
 <resources>
-    <string name="app_name">Game of Thrones Phrases</string>
-    <string name="frases_de_game_of_thrones">Frases de Game of Thrones</string>
-    <string name="guardar">GUARDAR</string>
+  <string name="app_name">Game of Thrones Phrases</string>
+  <string name="frases_de_game_of_thrones">Frases de Game of Thrones</string>
+  <string name="guardar">GUARDAR</string>
   <string name="digite_seu_nome">Digite seu nome</string>
   <string name="gerar_outra_frase">GERAR OUTRA FRASE</string>
+  <string name="ola_user">Olá, {0}</string>
+  <string name="pharase_text">{0}</string>
 </resources>
