@@ -4,6 +4,7 @@
   android:layout_height="match_parent"
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
+  android:background="@color/white"
   tools:context=".MainActivity">
 
   <View
@@ -68,7 +69,7 @@
     android:layout_height="wrap_content"
     android:layout_marginTop="184dp"
     android:fontFamily="@font/alata"
-    android:text="@string/pharase_text"
+    android:text="@string/selecione_algu_m_para_come_ar"
     android:textColor="@color/black"
     android:textSize="20sp"
     app:layout_constraintEnd_toEndOf="parent"

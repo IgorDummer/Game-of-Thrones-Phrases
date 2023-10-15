@@ -21,10 +21,10 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     override fun onClick(v: View?) {
         if(v?.id == R.id.botao_guardar) {
-            startActivity(Intent(this, Home::class.java))
-            finish()
+            val userName = binding.inputTextName.text.toString()
+            val intent = Intent(this, Home::class.java)
+            intent.putExtra("user_name", userName)
+            startActivity(intent)
         }
     }
-
-
 }
