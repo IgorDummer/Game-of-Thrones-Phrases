@@ -1,0 +1,11 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+  <string name="app_name">Game of Thrones Phrases</string>
+  <string name="frases_de_game_of_thrones">Game of Thrones Phrases</string>
+  <string name="guardar">SAVE</string>
+  <string name="digite_seu_nome">Type your name</string>
+  <string name="gerar_outra_frase">generate another sentence</string>
+  <string name="ola_user">Hello, {0}</string>
+  <string name="pharase_text">{0}</string>
+  <string name="selecione_algu_m_para_come_ar">Select someone to start</string>
+</resources>
