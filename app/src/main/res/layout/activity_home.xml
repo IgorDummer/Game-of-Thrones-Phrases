@@ -90,6 +90,5 @@
     android:backgroundTint="@color/dark_blue"
     android:textSize="14sp"
     android:fontFamily="@font/alata"
-
     />
 </androidx.constraintlayout.widget.ConstraintLayout>
