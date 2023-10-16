@@ -15,18 +15,17 @@ import android.content.SharedPreferences
 class MainActivity : AppCompatActivity(), View.OnClickListener {
 
     private lateinit var binding: ActivityMainBinding;
-    private lateinit var sharedPreferences: SharedPreferences
+    private lateinit var myPreferences: MyPreferences
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         setContentView(binding.root)
 
-        sharedPreferences = getSharedPreferences("my_prefs", Context.MODE_PRIVATE)
+        myPreferences = MyPreferences(this)
 
-        val savedUserName = sharedPreferences.getString("user_name", null)
-
-        if (savedUserName != null) {
+        if (myPreferences.hasUserName()) {
+            val savedUserName = myPreferences.getUserName()
             val intent = Intent(this, Home::class.java)
             intent.putExtra("user_name", savedUserName)
             startActivity(intent)
@@ -40,9 +39,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         if(v?.id == R.id.botao_guardar) {
             val userName = binding.inputTextName.text.toString()
 
-            val editor = sharedPreferences.edit()
-            editor.putString("user_name", userName)
-            editor.apply()
+            myPreferences.saveUserName(userName)
 
             val intent = Intent(this, Home::class.java)
             intent.putExtra("user_name", userName)
