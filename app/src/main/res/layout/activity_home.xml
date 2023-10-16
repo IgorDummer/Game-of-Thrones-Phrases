@@ -5,7 +5,7 @@
   xmlns:app="http://schemas.android.com/apk/res-auto"
   xmlns:tools="http://schemas.android.com/tools"
   android:background="@color/white"
-  tools:context=".MainActivity">
+  tools:context=".ui.MainActivity">
 
   <View
     android:id="@+id/blueBar"
@@ -72,9 +72,12 @@
     android:text="@string/selecione_algu_m_para_come_ar"
     android:textColor="@color/black"
     android:textSize="20sp"
+    android:layout_marginHorizontal="80dp"
     app:layout_constraintEnd_toEndOf="parent"
     app:layout_constraintStart_toStartOf="parent"
-    app:layout_constraintTop_toBottomOf="@+id/user_text" />
+    app:layout_constraintTop_toBottomOf="@+id/user_text"
+    android:textAlignment="center"
+    />
 
   <Button
     android:id="@+id/botao_gerar_frase"

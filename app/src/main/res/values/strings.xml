@@ -4,7 +4,7 @@
   <string name="guardar">GUARDAR</string>
   <string name="digite_seu_nome">Digite seu nome</string>
   <string name="gerar_outra_frase">GERAR OUTRA FRASE</string>
-  <string name="ola_user">Olá, {0}</string>
+  <string name="ola_user">Olá, </string>
   <string name="pharase_text">{0}</string>
   <string name="selecione_algu_m_para_come_ar">Selecione alguém para começar</string>
 </resources>

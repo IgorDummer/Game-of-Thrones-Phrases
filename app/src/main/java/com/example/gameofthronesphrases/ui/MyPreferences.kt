@@ -1,4 +1,4 @@
-package com.example.gameofthronesphrases
+package com.example.gameofthronesphrases.ui
 
 import android.content.Context
 import android.content.SharedPreferences

@@ -1,15 +1,11 @@
-package com.example.gameofthronesphrases
+package com.example.gameofthronesphrases.ui
 
-import android.content.Context
 import android.content.Intent
 import androidx.appcompat.app.AppCompatActivity
 import android.os.Bundle
 import android.view.View
-import android.widget.TextView
-import android.widget.Toast
+import com.example.gameofthronesphrases.R
 import com.example.gameofthronesphrases.databinding.ActivityMainBinding
-
-import android.content.SharedPreferences
 
 
 class MainActivity : AppCompatActivity(), View.OnClickListener {
@@ -26,7 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
         if (myPreferences.hasUserName()) {
             val savedUserName = myPreferences.getUserName()
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             intent.putExtra("user_name", savedUserName)
             startActivity(intent)
             finish()
@@ -41,7 +37,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
 
             myPreferences.saveUserName(userName)
 
-            val intent = Intent(this, Home::class.java)
+            val intent = Intent(this, HomeActivity::class.java)
             intent.putExtra("user_name", userName)
             startActivity(intent)
             finish()
